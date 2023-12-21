@@ -37,11 +37,6 @@
     hsla(45, 100%, 71%, 0.251) 0%, 
     hsla(35, 100%, 68%, 0) 59.86%
   ), hsl(240, 2%, 13%);
-  --border-gradient-onyx: linear-gradient(
-    to bottom right, 
-    hsl(0, 0%, 25%) 0%, 
-    hsla(0, 0%, 25%, 0) 50%
-  );
   --text-gradient-orange: linear-gradient(
     to right, 
     hsl(26, 97%, 66%), 
@@ -201,14 +196,13 @@ article {
 
 .icon-box {
   position: relative;
-  /*background: var(--border-gradient-onyx);*/
   width: 30px;
   height: 30px;
   border-radius: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
+  font-size: 20px;
   color: var(--orange-yellow-crayola);
   box-shadow: var(--shadow-1);
   z-index: 1;
@@ -291,7 +285,6 @@ article.active {
 
 .content-card {
   position: relative;
-  /*background: var(--border-gradient-onyx);*/
   padding: 15px;
   padding-top: 45px;
   border-radius: 14px;
@@ -406,7 +399,6 @@ main {
   border-radius: 0 15px;
   font-size: 13px;
   color: var(--orange-yellow-crayola);
-  /*background: var(--border-gradient-onyx);*/
   padding: 10px;
   box-shadow: var(--shadow-2);
   transition: var(--transition-1);
@@ -485,7 +477,7 @@ main {
 
 .social-item .social-link {
   color: var(--light-gray-70);
-  font-size: 18px;
+  font-size: 23px;
 }
 
 
@@ -569,7 +561,6 @@ main {
 
 .service-item {
   position: relative;
-  /*background: var(--border-gradient-onyx);*/
   padding: 20px;
   border-radius: 14px;
   box-shadow: var(--shadow-2);
@@ -1139,7 +1130,6 @@ main {
 
 .blog-post-item > a {
   position: relative;
-  /*background: var(--border-gradient-onyx);*/
   height: 100%;
   box-shadow: var(--shadow-4);
   border-radius: 16px;
@@ -1276,7 +1266,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 .form-btn {
   position: relative;
   width: 100%;
-  /*background: var(--border-gradient-onyx);*/
   color: var(--orange-yellow-crayola);
   display: flex;
   justify-content: center;
@@ -1312,7 +1301,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   cursor: not-allowed;
 }
 
-/*.form-btn:disabled:hover { background: var(--border-gradient-onyx); }*/
 
 .form-btn:disabled:hover::before { background: var(--bg-gradient-jet); }
 
