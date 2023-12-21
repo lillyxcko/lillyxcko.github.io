@@ -201,7 +201,7 @@ article {
 
 .icon-box {
   position: relative;
-  background: var(--border-gradient-onyx);
+  /*background: var(--border-gradient-onyx);*/
   width: 30px;
   height: 30px;
   border-radius: 8px;
@@ -291,7 +291,7 @@ article.active {
 
 .content-card {
   position: relative;
-  background: var(--border-gradient-onyx);
+  /*background: var(--border-gradient-onyx);*/
   padding: 15px;
   padding-top: 45px;
   border-radius: 14px;
@@ -406,7 +406,7 @@ main {
   border-radius: 0 15px;
   font-size: 13px;
   color: var(--orange-yellow-crayola);
-  background: var(--border-gradient-onyx);
+  /*background: var(--border-gradient-onyx);*/
   padding: 10px;
   box-shadow: var(--shadow-2);
   transition: var(--transition-1);
@@ -569,7 +569,7 @@ main {
 
 .service-item {
   position: relative;
-  background: var(--border-gradient-onyx);
+  /*background: var(--border-gradient-onyx);*/
   padding: 20px;
   border-radius: 14px;
   box-shadow: var(--shadow-2);
@@ -1139,7 +1139,7 @@ main {
 
 .blog-post-item > a {
   position: relative;
-  background: var(--border-gradient-onyx);
+  /*background: var(--border-gradient-onyx);*/
   height: 100%;
   box-shadow: var(--shadow-4);
   border-radius: 16px;
@@ -1276,7 +1276,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 .form-btn {
   position: relative;
   width: 100%;
-  background: var(--border-gradient-onyx);
+  /*background: var(--border-gradient-onyx);*/
   color: var(--orange-yellow-crayola);
   display: flex;
   justify-content: center;
@@ -1312,7 +1312,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   cursor: not-allowed;
 }
 
-.form-btn:disabled:hover { background: var(--border-gradient-onyx); }
+/*.form-btn:disabled:hover { background: var(--border-gradient-onyx); }*/
 
 .form-btn:disabled:hover::before { background: var(--bg-gradient-jet); }
 
