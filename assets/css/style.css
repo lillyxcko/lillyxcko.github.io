@@ -1816,6 +1816,14 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   article { min-height: 100%; }
 
+  .row {
+    display: flex;
+    align-items: center; 
+  }
+
+  .row span {
+    margin-right: 5px; 
+  }
 
 
   /**
