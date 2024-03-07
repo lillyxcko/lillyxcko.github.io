@@ -60,6 +60,7 @@
   --vegas-gold: hsl(45, 54%, 58%);
   --cool-green: hsl(113, 83%, 77%);
   --cool-purple: hsl(251, 66%, 78%);
+  --mute-purple: rgba(175, 162, 236, 0.563);
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
@@ -762,6 +763,12 @@ main {
 
 .timeline-list span {
   color: var(--cool-purple);
+  font-weight: var(--fw-400);
+  line-height: 1.6;
+}
+
+.duration-text {
+  color: var(--mute-purple);
   font-weight: var(--fw-400);
   line-height: 1.6;
 }
