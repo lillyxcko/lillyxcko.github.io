@@ -64,14 +64,14 @@ function MainContent() {
       </div>
       <h4>My Tech Stack</h4>
       <div className="tech-stack-logos">
-        <img src={csshtml} alt="CSS HTML" data-tip="CSS HTML" />
-        <img src={javascript} alt="Javascript" data-tip="Javascript" />
-        <img src={figma} alt="Figma" data-tip="Figma" />
-        <img src={reactlogo} alt="React" data-tip="React" />
-        <img src={typescript} alt="Typescript" data-tip="Typescript" />
-        <img src={python} alt="Python" data-tip="Python" />
-        <img src={java} alt="Java" data-tip="Java" />
-        <img src={powerapps} alt="Microsoft PowerApps" data-tip="Microsoft PowerApps" />
+        <img src={csshtml} alt="CSS HTML" />
+        <img src={javascript} alt="Javascript" />
+        <img src={figma} alt="Figma" />
+        <img src={reactlogo} alt="React" />
+        <img src={typescript} alt="Typescript" />
+        <img src={python} alt="Python" />
+        <img src={java} alt="Java" />
+        <img src={powerapps} alt="Microsoft PowerApps" />
       </div>
     </div>
   );
