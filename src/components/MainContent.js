@@ -4,20 +4,21 @@ import quotation from '../images/TK-Quotation.png';
 import '../App.css';
 import csshtml from '../images/css-html.png'; 
 import figma from '../images/figma.png';
-//import google from '../images/google.png';
+import google from '../images/google.png';
 import java from '../images/java.png';
 import javascript from '../images/javascript.png';
-//import microsoft from '../images/microsoft.png';
+import microsoft from '../images/microsoft.png';
 import powerapps from '../images/powerapps.png';
 import python from '../images/python.png';
 import typescript from '../images/typescript.png';
 import reactlogo from '../images/react.png';
-//import uvic from '../images/uvic.png';
+import uvic from '../images/uvic.png';
+import heart from '../images/heart-solid.svg';
+
 
 function MainContent() {
   return (
     <div className="main-content">
-      {/* Main content */}
       <h1>Front-End Dev</h1>
       <h2>UX Designer</h2>
       <p>G’day! I’m Lilly 😁 Whether I’m working in software development or UX design, 
@@ -77,7 +78,42 @@ function MainContent() {
       <p style={{ marginBottom: 1, lineHeight: 1.5}}>I have the most expertise with these tools.</p>
       <div className="tech-description">Even when using something new, I learn fast and adapt quickly, ensuring reliable, high-quality results.</div>
       
-      <h4>My Credentials</h4>
+      <h4 style={{ marginBottom: 8}}>My Credentials </h4>
+        <div className="credentials">
+          <div className="credential-item">
+            <img src={uvic} alt="University of Victoria Logo"/>
+            <div>
+              <div className="credential-title">University of Victoria</div>
+              <div className="credential-text">B.Sc Computer Science and Psychology</div>
+            </div>
+          </div>
+          <div className="credential-item">
+            <img src={google} alt="Google Logo"/>
+            <div>
+              <div className="credential-title">Google UX Design</div>
+              <div className="credential-text">Professional Certificate</div>
+            </div>
+          </div>
+          <div className="credential-item">
+            <img src={microsoft} alt="Microsoft Logo"/>
+            <div>
+              <div className="credential-title">Microsoft Certified</div>
+              <div className="credential-text">Azure Fundamentals</div>
+            </div>
+          </div>
+          <div className="credential-item">
+            <img src={microsoft} alt="Microsoft Logo"/>
+            <div>
+              <div className="credential-title">Microsoft Certified</div>
+              <div className="credential-text">Power Platform Fundamentals</div>
+            </div>
+          </div>
+        </div>
+        <div className="footer">
+          <img src={heart} alt="Heart" className="heart-icon"/>
+          <p>Developed with care, Lilly.</p>
+        </div>
+        
     </div>
   );
 }
