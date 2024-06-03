@@ -4,15 +4,15 @@ import quotation from '../images/TK-Quotation.png';
 import '../App.css';
 import csshtml from '../images/css-html.png'; 
 import figma from '../images/figma.png';
-import google from '../images/google.png';
+//import google from '../images/google.png';
 import java from '../images/java.png';
 import javascript from '../images/javascript.png';
-import microsoft from '../images/microsoft.png';
+//import microsoft from '../images/microsoft.png';
 import powerapps from '../images/powerapps.png';
 import python from '../images/python.png';
 import typescript from '../images/typescript.png';
 import reactlogo from '../images/react.png';
-import uvic from '../images/uvic.png';
+//import uvic from '../images/uvic.png';
 
 function MainContent() {
   return (
@@ -62,7 +62,8 @@ function MainContent() {
           </div>
         </div>
       </div>
-      <h4>My Tech Stack</h4>
+      
+      <h4 >My Tech Stack</h4>
       <div className="tech-stack-logos">
         <img src={csshtml} alt="CSS HTML" />
         <img src={javascript} alt="Javascript" />
@@ -73,6 +74,10 @@ function MainContent() {
         <img src={java} alt="Java" />
         <img src={powerapps} alt="Microsoft PowerApps" />
       </div>
+      <p style={{ marginBottom: 1, lineHeight: 1.5}}>I have the most expertise with these tools.</p>
+      <div className="tech-description">Even when using something new, I learn fast and adapt quickly, ensuring reliable, high-quality results.</div>
+      
+      <h4>My Credentials</h4>
     </div>
   );
 }

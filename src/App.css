@@ -289,6 +289,17 @@ body, html, #root, .App {
   margin-bottom: 1rem;
 }
 
+.work-description {
+  width: 100%;
+  text-align: left;
+  color: #EBEBEB;
+  font-size: 0.95rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+
 /* ==============================
    Recent Work Styling
    ============================== */
@@ -344,15 +355,15 @@ body, html, #root, .App {
     cursor: pointer;
   }
   
-  .work-description {
+  .tech-description {
     width: 100%;
     text-align: left;
-    color: #EBEBEB;
-    font-size: 0.95rem;
+    color: #b7b7b7;
+    font-size: 0.9rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.5rem;
-    margin-bottom: 1rem;
+    line-height: 1.2rem;
+    margin-top: 0rem;
   }
   
 /* ==============================
@@ -476,6 +487,9 @@ body, html, #root, .App {
     .main-content p, .highlight, .smaller-text {
       font-size: 1rem; 
     }
+    .tech-description {
+      font-size: 0.9rem;
+    }
     .sidebar h1 {
       font-size: 1.6rem; 
       left: calc(9.375rem + 2.1rem); 
@@ -557,8 +571,12 @@ body, html, #root, .App {
       margin-top: 0.5rem;
       margin-bottom: 0.3rem;
     }
-    .main-content p, .highlight, .smaller-text {
+    .main-content p, .highlight, .smaller-text, .work-description {
       font-size: 0.9rem;
+      line-height: 1.5rem;
+    }
+    .tech-description {
+      font-size: 0.8rem;
     }
     .sidebar h1 {
       font-size: 1.3rem;
