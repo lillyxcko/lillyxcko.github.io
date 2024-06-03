@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactTooltip from 'react-tooltip';
 import spark from '../images/Spark.png';
 import quotation from '../images/TK-Quotation.png';
 import '../App.css';
@@ -74,7 +73,6 @@ function MainContent() {
         <img src={java} alt="Java" data-tip="Java" />
         <img src={powerapps} alt="Microsoft PowerApps" data-tip="Microsoft PowerApps" />
       </div>
-      <ReactTooltip />
     </div>
   );
 }
