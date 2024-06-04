@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import spark from '../images/Spark.png';
 import quotation from '../images/TK-Quotation.png';
 import '../App.css';
@@ -13,10 +13,34 @@ import python from '../images/python.png';
 import typescript from '../images/typescript.png';
 import reactlogo from '../images/react.png';
 import uvic from '../images/uvic.png';
-import heart from '../images/heart-solid.svg';
-
+import heartgif from '../images/heart.gif';
+import heartStatic from '../images/heart.png'; // Import the static image
 
 function MainContent() {
+  const heartRef = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (heartRef.current) {
+        const rect = heartRef.current.getBoundingClientRect();
+        if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+          heartRef.current.style.opacity = 1;
+          heartRef.current.src = heartgif; // Play the gif
+          setTimeout(() => {
+            heartRef.current.src = heartStatic; // Replace with static image after 2 seconds
+          }, 1700); // Duration of the gif in milliseconds
+          window.removeEventListener('scroll', handleScroll); // Remove event listener after playing once
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <div className="main-content">
       <h1>Front-End Dev</h1>
@@ -64,56 +88,61 @@ function MainContent() {
         </div>
       </div>
       
-      <h4 >My Tech Stack</h4>
+      <h4>My Tech Stack</h4>
       <div className="tech-stack-logos">
-        <img src={csshtml} alt="CSS HTML" />
-        <img src={javascript} alt="Javascript" />
-        <img src={figma} alt="Figma" />
-        <img src={reactlogo} alt="React" />
-        <img src={typescript} alt="Typescript" />
-        <img src={python} alt="Python" />
-        <img src={java} alt="Java" />
-        <img src={powerapps} alt="Microsoft PowerApps" />
+        <img src={csshtml} alt="CSS HTML" title="CSS HTML"/>
+        <img src={javascript} alt="Javascript" title="JavaScript"/>
+        <img src={figma} alt="Figma" title="Figma"/>
+        <img src={reactlogo} alt="React" title="React"/>
+        <img src={typescript} alt="Typescript" title="TypeScript"/>
+        <img src={python} alt="Python" title="Python"/>
+        <img src={java} alt="Java" title="Java"/>
+        <img src={powerapps} alt="Microsoft PowerApps" title="Microsoft PowerApps"/>
       </div>
       <p style={{ marginBottom: 1, lineHeight: 1.5}}>I have the most expertise with these tools.</p>
       <div className="tech-description">Even when using something new, I learn fast and adapt quickly, ensuring reliable, high-quality results.</div>
       
-      <h4 style={{ marginBottom: 8}}>My Credentials </h4>
+      <h4 style={{ marginBottom: 8}}>My Credentials</h4>
         <div className="credentials">
           <div className="credential-item">
-            <img src={uvic} alt="University of Victoria Logo"/>
+            <img src={uvic} alt="University of Victoria Logo" title="Uvic"/>
             <div>
               <div className="credential-title">University of Victoria</div>
               <div className="credential-text">B.Sc Computer Science and Psychology</div>
             </div>
           </div>
           <div className="credential-item">
-            <img src={google} alt="Google Logo"/>
-            <div>
-              <div className="credential-title">Google UX Design</div>
-              <div className="credential-text">Professional Certificate</div>
-            </div>
+            <img src={google} alt="Google Logo" title="Google"/>
+            <a href="https://coursera.org/share/162489572f20d6ead98f126c7ee27a8c" target="_blank" rel="noopener noreferrer" className="credential-link">
+              <div>
+                <div className="credential-title">Google UX Design</div>
+                <div className="credential-text">Professional Certificate</div>
+              </div>
+            </a>
           </div>
           <div className="credential-item">
-            <img src={microsoft} alt="Microsoft Logo"/>
-            <div>
-              <div className="credential-title">Microsoft Certified</div>
-              <div className="credential-text">Azure Fundamentals</div>
-            </div>
+            <img src={microsoft} alt="Microsoft Logo" title="Microsoft"/>
+            <a href="https://learn.microsoft.com/en-us/users/lillyko-4057/credentials/380e0dddb20be05f?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" rel="noopener noreferrer" className="credential-link">
+              <div>
+                <div className="credential-title">Microsoft Certified</div>
+                <div className="credential-text">Azure Fundamentals</div>
+              </div>
+            </a>
           </div>
           <div className="credential-item">
-            <img src={microsoft} alt="Microsoft Logo"/>
-            <div>
-              <div className="credential-title">Microsoft Certified</div>
-              <div className="credential-text">Power Platform Fundamentals</div>
-            </div>
+            <img src={microsoft} alt="Microsoft Logo" title="Microsoft"/>
+            <a href="https://learn.microsoft.com/en-us/users/lillyko-4057/credentials/cca0565265a0d03b?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" rel="noopener noreferrer" className="credential-link">
+              <div>
+                <div className="credential-title">Microsoft Certified</div>
+                <div className="credential-text">Power Platform Fundamentals</div>
+              </div>
+            </a>
           </div>
         </div>
         <div className="footer">
-          <img src={heart} alt="Heart" className="heart-icon"/>
-          <p>Developed with care, Lilly.</p>
+          <img ref={heartRef} alt="Heart" className="heart-icon" style={{ opacity: 0 }} />
+          <p style={{ marginTop: 0 }}>Developed with care, Lilly.</p>
         </div>
-        
     </div>
   );
 }

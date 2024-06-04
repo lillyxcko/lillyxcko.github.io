@@ -22,10 +22,10 @@ function Sidebar({ emailRef, copied, copyToClipboard }) {
       <div className="nav-bar" style={{'--underline-color': '#f04877'}}>Credentials</div>
       <div className="sidebar-bottom">
         <a href="https://www.linkedin.com/in/lillyko/" target="_blank" rel="noopener noreferrer">
-          <img src={linkedin} alt="LinkedIn" className="social-logo" />
+          <img src={linkedin} alt="LinkedIn" className="social-logo" title="LinkedIn" />
         </a>
         <a href="https://github.com/lillyxcko" target="_blank" rel="noopener noreferrer">
-          <img src={github} alt="GitHub" className="social-logo" />
+          <img src={github} alt="GitHub" className="social-logo" title="GitHub"/>
         </a>
       </div>
     </div>
