@@ -43,7 +43,7 @@ function MainContent() {
 
   return (
     <div className="main-content">
-      <h1>Front-End Dev</h1>
+      <h1 id="about">Front-End Dev</h1>
       <h2>UX Designer</h2>
       <p>G’day! I’m Lilly 😁 Whether I’m working in software development or UX design, 
         I prioritize <span className="highlight">functional</span>, 
@@ -59,7 +59,7 @@ function MainContent() {
         designs are dynamic enough to meet development requirements, enabling me to identify potential issues 
         early and propose solutions that are both technically feasible and user-friendly.
       </div>
-      <h4>Recent Work</h4>
+      <h4 id="portfolio">Recent Work</h4>
       <div className="recent-work"> 
         <div className="work">
           <a href="https://spark-roan.vercel.app/" target="_blank" rel="noopener noreferrer" className="work-item-link">
@@ -88,7 +88,7 @@ function MainContent() {
         </div>
       </div>
       
-      <h4>My Tech Stack</h4>
+      <h4 id="tech-stack">My Tech Stack</h4>
       <div className="tech-stack-logos">
         <img src={csshtml} alt="CSS HTML" title="CSS HTML"/>
         <img src={javascript} alt="Javascript" title="JavaScript"/>
@@ -102,7 +102,7 @@ function MainContent() {
       <p style={{ marginBottom: 1, lineHeight: 1.5}}>I have the most expertise with these tools.</p>
       <div className="tech-description">Even when using something new, I learn fast and adapt quickly, ensuring reliable, high-quality results.</div>
       
-      <h4 style={{ marginBottom: 8}}>My Credentials</h4>
+      <h4 style={{ marginBottom: 8}} id="credentials">My Credentials</h4>
         <div className="credentials">
           <div className="credential-item">
             <img src={uvic} alt="University of Victoria Logo" title="Uvic"/>
