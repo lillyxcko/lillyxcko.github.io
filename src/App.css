@@ -96,7 +96,6 @@ body, html, #root, .App {
 }
 
 .contact-tag.copied::after {
-  content: "Copied!";
   position: absolute;
   top: 50%;
   left: 50%;
