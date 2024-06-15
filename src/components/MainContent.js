@@ -54,9 +54,10 @@ function MainContent() {
       </p>
       <h3>What makes me unique?</h3>
       <div className="smaller-text">
-        My dual expertise as a developer with a strong understanding of design allows me to bridge the gap 
-        between designers and developers, enhancing cross-team collaboration. My keen eye for UX ensures that 
-        designs are dynamic enough to meet development requirements, enabling me to propose solutions that are both technically feasible and user-friendly.
+        With expertise in development and a deep appreciation for design, I am uniquely positioned to 
+        support cross-team collaboration by bridging the gap between designers and developers. 
+        My keen eye for UX ensures that designs meet development requirements while remaining user-friendly and dynamic. 
+        This holistic perspective not only makes designs and project outcomes more effective but also leads to more creative and practical solutions.
       </div>
       <h4 id="portfolio">Recent Work</h4>
       <div className="recent-work"> 
