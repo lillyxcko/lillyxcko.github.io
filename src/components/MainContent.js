@@ -56,8 +56,7 @@ function MainContent() {
       <div className="smaller-text">
         My dual expertise as a developer with a strong understanding of design allows me to bridge the gap 
         between designers and developers, enhancing cross-team collaboration. My keen eye for UX ensures that 
-        designs are dynamic enough to meet development requirements, enabling me to identify potential issues 
-        early and propose solutions that are both technically feasible and user-friendly.
+        designs are dynamic enough to meet development requirements, enabling me to propose solutions that are both technically feasible and user-friendly.
       </div>
       <h4 id="portfolio">Recent Work</h4>
       <div className="recent-work"> 
