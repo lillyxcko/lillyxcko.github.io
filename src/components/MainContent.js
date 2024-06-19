@@ -55,7 +55,7 @@ function MainContent() {
       <h3>What makes me unique?</h3>
       <div className="smaller-text">
         With expertise in development and a deep appreciation for design, I am uniquely positioned to 
-        support cross-team collaboration by bridging the gap between designers and developers. 
+        support cross-team collaboration between designers and developers. 
         My keen eye for UX ensures that designs meet development requirements while remaining user-friendly and dynamic. 
         This holistic perspective not only makes designs and project outcomes more effective but also leads to more creative and practical solutions.
       </div>
