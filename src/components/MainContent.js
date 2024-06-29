@@ -100,7 +100,7 @@ function MainContent() {
         <img src={powerapps} alt="Microsoft PowerApps" title="Microsoft PowerApps"/>
       </div>
       <p style={{ marginBottom: 1, lineHeight: 1.5}}>I have the most expertise with these tools.</p>
-      <div className="tech-description">Even when using something new, I learn fast and adapt quickly, ensuring reliable, high-quality results.</div>
+      <div className="tech-description">Even when using something new, I learn fast and adapt quickly!</div>
       
       <h4 style={{ marginBottom: 8}} id="credentials">My Credentials</h4>
         <div className="credentials">
