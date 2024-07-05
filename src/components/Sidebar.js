@@ -35,7 +35,7 @@ function Sidebar({ emailRef, copied, copyToClipboard }) {
           <img src={github} alt="GitHub" className="social-logo" title="GitHub"/>
         </a>
         <a href="https://dribbble.com/lillyxcko" target="_blank" rel="noopener noreferrer">
-          <img src={dribble} alt="Dribble" className="social-logo" title="Dribble"/>
+          <img src={dribble} alt="Dribbble" className="social-logo" title="Dribbble"/>
         </a>
       </div>
     </div>

@@ -193,11 +193,11 @@ body, html, #root, .App {
 }
 
 .social-logo {
-  width: 25px; 
+  width: 20px; 
   height: auto; 
   filter: grayscale(100%);
   transition: filter 0.3s ease;
-  margin: 1rem;
+  margin: 0.7rem;
   cursor: pointer;
 }
 
