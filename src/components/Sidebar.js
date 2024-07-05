@@ -2,6 +2,7 @@ import React from 'react';
 import avatar from '../images/my-avatar2.png';
 import linkedin from '../images/linkedin.svg';
 import github from '../images/github.svg';
+import dribble from '../images/dribble.svg';
 import '../App.css';
 
 function Sidebar({ emailRef, copied, copyToClipboard }) {
@@ -32,6 +33,9 @@ function Sidebar({ emailRef, copied, copyToClipboard }) {
         </a>
         <a href="https://github.com/lillyxcko" target="_blank" rel="noopener noreferrer">
           <img src={github} alt="GitHub" className="social-logo" title="GitHub"/>
+        </a>
+        <a href="https://dribble.com/lillyxcko" target="_blank" rel="noopener noreferrer">
+          <img src={dribble} alt="Dribble" className="social-logo" title="Dribble"/>
         </a>
       </div>
     </div>
