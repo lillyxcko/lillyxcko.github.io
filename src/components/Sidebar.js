@@ -25,6 +25,7 @@ function Sidebar({ emailRef, copied, copyToClipboard }) {
       </div>
       <div className="nav-bar" style={{'--underline-color': '#ff7f50'}} onClick={() => handleClick('about')}>About</div>
       <div className="nav-bar" style={{'--underline-color': '#3fc53e'}} onClick={() => handleClick('portfolio')}>Portfolio</div>
+      <div className="nav-bar" style={{'--underline-color': '#b24bf3'}} onClick={() => handleClick('blog')}>Articles</div>
       <div className="nav-bar" style={{'--underline-color': '#3493ee'}} onClick={() => handleClick('tech-stack')}>Tech Stack</div>
       <div className="nav-bar" style={{'--underline-color': '#f04877'}} onClick={() => handleClick('credentials')}>Credentials</div>
       <div className="sidebar-bottom">

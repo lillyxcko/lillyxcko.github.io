@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import spark from '../images/Spark.png';
 import quotation from '../images/TK-Quotation.png';
 import '../App.css';
+import arrow from '../images/arrow-purple.svg';
 import csshtml from '../images/css-html.png'; 
 import figma from '../images/figma.png';
 import google from '../images/google.png';
@@ -59,6 +60,7 @@ function MainContent() {
         My keen eye for UX ensures that designs meet development requirements while remaining user-friendly and dynamic. 
         This holistic perspective not only makes designs and project outcomes more effective but also leads to more creative and practical solutions.
       </div>
+      
       <h4 id="portfolio">Recent Work</h4>
       <div className="recent-work"> 
         <div className="work">
@@ -87,6 +89,22 @@ function MainContent() {
           </div>
         </div>
       </div>
+
+      <h4 id="blog">Articles</h4>
+        <div className="recent-work">
+          <div className="work">
+            <a href="https://bootcamp.uxdesign.cc/how-designers-can-be-more-dev-conscious-77d9e20ea15e?source=friends_link&sk=858fc006804320d0e7a58215b196234a" target="_blank" className="blog-box-link">
+              <div className="blog-box">
+                <h2 className="blog-title">How designers can be more “Dev-Conscious”</h2>
+                <p className="blog-description">Discover how to elevate your UX designs and collaborate with developers for inspiring and achievable solutions.</p>
+                <div className="blog-read-more">
+                  Read more
+                  <img src={arrow} alt="Arrow" className="arrow-icon"/>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
       
       <h4 id="tech-stack">My Tech Stack</h4>
       <div className="tech-stack-logos">
@@ -99,9 +117,9 @@ function MainContent() {
         <img src={java} alt="Java" title="Java"/>
         <img src={powerapps} alt="Microsoft PowerApps" title="Microsoft PowerApps"/>
       </div>
-      <p style={{ marginBottom: 1, lineHeight: 1.5}}>I have the most expertise with these tools.</p>
+      <p style={{ marginBottom: 1, marginTop: 1, lineHeight: 1.5}}>I have the most expertise with these tools.</p>
       <div className="tech-description">Even when using something new, I learn fast and adapt quickly!</div>
-      
+      <br></br>
       <h4 style={{ marginBottom: 8}} id="credentials">My Credentials</h4>
         <div className="credentials">
           <div className="credential-item">
@@ -124,8 +142,8 @@ function MainContent() {
             <img src={microsoft} alt="Microsoft Logo" title="Microsoft"/>
             <a href="https://learn.microsoft.com/en-us/users/lillyko-4057/credentials/380e0dddb20be05f?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" rel="noopener noreferrer" className="credential-link">
               <div>
-                <div className="credential-title">Microsoft Certified</div>
-                <div className="credential-text">Azure Fundamentals</div>
+                <div className="credential-title">Azure Fundamentals</div>
+                <div className="credential-text">Microsoft Certified</div>
               </div>
             </a>
           </div>
@@ -133,8 +151,17 @@ function MainContent() {
             <img src={microsoft} alt="Microsoft Logo" title="Microsoft"/>
             <a href="https://learn.microsoft.com/en-us/users/lillyko-4057/credentials/cca0565265a0d03b?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" rel="noopener noreferrer" className="credential-link">
               <div>
-                <div className="credential-title">Microsoft Certified</div>
-                <div className="credential-text">Power Platform Fundamentals</div>
+                <div className="credential-title">Power Platform Fundamentals</div>
+                <div className="credential-text">Microsoft Certified</div>
+              </div>
+            </a>
+          </div>
+          <div className="credential-item">
+            <img src={microsoft} alt="Microsoft Logo" title="Microsoft"/>
+            <a href="https://learn.microsoft.com/en-ca/users/lillyko-4057/credentials/2ce04ff7e378f613?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" rel="noopener noreferrer" className="credential-link">
+              <div>
+                <div className="credential-title">Azure AI Fundamentals</div>
+                <div className="credential-text">Microsoft Certified</div>
               </div>
             </a>
           </div>
