@@ -71,7 +71,7 @@ function MainContent() {
           </a>
           <div>
             <h5>Spark</h5>
-            <div className="work-description">✨ Spark, the social media web application made with React JS, Appwrite, Tailwind CSS, React Query. 
+            <div className="work-description">Social media web application made with React JS, Appwrite, Tailwind CSS, React Query. 
               Styled with shadcn. Includes account authentication, create, edit and explore posts, view, like and save posts. </div>
           </div>
         </div>
@@ -84,7 +84,7 @@ function MainContent() {
           </a>
           <div>
             <h5>Quotation UI</h5>
-            <div className="work-description">Meticulously developed high-fidelity mock-up for an enterprise API, strategically enhancing data 
+            <div className="work-description">High-fidelity Figma mock-up for an enterprise API, strategically enhancing data 
               entry and manipulation for quoting complex and highly customizable print jobs. </div>
           </div>
         </div>
