@@ -93,7 +93,7 @@ function MainContent() {
       <h4 id="blog">Articles</h4>
         <div className="recent-work">
           <div className="work">
-            <a href="https://bootcamp.uxdesign.cc/how-designers-can-be-more-dev-conscious-77d9e20ea15e?source=friends_link&sk=858fc006804320d0e7a58215b196234a" target="_blank" rel="noreferrer" className="blog-box-link">
+            <a href="https://medium.com/design-bootcamp/how-designers-can-be-more-dev-conscious-77d9e20ea15e" target="_blank" rel="noreferrer" className="blog-box-link">
               <div className="blog-box">
                 <h2 className="blog-title">How designers can be more “Dev-Conscious”</h2>
                 <p className="blog-description">Discover how to elevate your UX designs and collaborate with developers for inspiring and achievable solutions.</p>
