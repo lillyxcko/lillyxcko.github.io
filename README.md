@@ -1,1 +1,1 @@
-![Screenshot 2024-07-11 at 21-18-42 Lilly Ko](https://github.com/user-attachments/assets/bba88ffb-be49-4b68-a654-37bb17b3a9f7)
+![Screenshot 2024-11-22 at 16-51-43 Lilly Ko](https://github.com/user-attachments/assets/e33bf342-a88f-4a9a-bffa-c3b32f1eebfa)
