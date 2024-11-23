@@ -12,19 +12,17 @@ const range = (count) => Array.from({ length: count }, (_, i) => i);
 // Predefined list of colors
 const colorList = [
     '#ff7f50',
-    '#3fc53e',
+    '#72cc50',
     '#b24bf3',
     '#3493ee',
     '#f04877',
     '#6e57c9',
-    '#ea2f86',
+    '#fc83ac',
     '#ffcc00',
     '#f09c0a',
     '#fae000',
     '#4070d3',
-    '#493c9e',
     '#93ecf8',
-    '#ADD8E6',
     '#90d5ff'
   ];
   
@@ -39,7 +37,7 @@ const generateSparkle = () => ({
   size: random(10, 20),
   style: {
     top: `${random(-80, 70)}%`,
-    left: `${random(40, 120)}%`,
+    left: `${random(20, 120)}%`,
     zIndex: random(0, 1) === 0 ? -1 : 2, // Randomly decide z-index
   },
 });
@@ -159,12 +157,12 @@ const Wrapper = styled.span`
 const SparkleWrapper = styled.div`
   position: absolute;
   pointer-events: none;
-  animation: ${growAndShrink} 700ms ease-in-out forwards;
+  animation: ${growAndShrink} 650ms ease-in-out forwards;
   top: -50px; 
 `;
 
 const Svg = styled(ReactSVG)`
-  animation: ${spin} 700ms linear forwards;
+  animation: ${spin} 650ms linear forwards;
 `;
 
 const ChildWrapper = styled.strong`
