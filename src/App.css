@@ -502,30 +502,6 @@ body, html, #root, .App {
     }
   }
   
-/* ==============================
-   Sparkles Styling
-   ============================== */
-   
-.sparkle {
-  position: absolute;
-  pointer-events: none;
-  width: 10px;
-  height: 10px;
-  background-color: rgba(255, 215, 0, 0.8); /* Gold sparkles */
-  border-radius: 50%;
-  animation: sparkle 1s ease-out forwards;
-}
-
-@keyframes sparkle {
-  0% {
-    transform: scale(0.5) rotate(0deg);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(2) rotate(360deg);
-    opacity: 0;
-  }
-}
 
 /*========================================================*/
 
