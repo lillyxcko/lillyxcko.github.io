@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import spark from '../images/Spark.png';
 import politiq from '../images/PolitiQ.png';
-import quotation from '../images/TK-Quotation.png';
 import '../App.css';
 import arrow from '../images/arrow-purple.svg';
 import csshtml from '../images/css-html.png'; 
