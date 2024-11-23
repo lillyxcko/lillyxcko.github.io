@@ -26,8 +26,21 @@ const colorList = [
     '#90d5ff'
   ];
   
-  // Utility function to pick a random color from the list
-  const generateVibrantColor = () => colorList[random(0, colorList.length - 1)];
+// Utility function to pick a random color from the list, excluding recent ones
+const generateVibrantColor = (() => {
+  let recentColors = []; // Track the last three picked colors
+
+  return () => {
+    const availableColors = colorList.filter((color) => !recentColors.includes(color));
+    const pickedColor = availableColors[random(0, availableColors.length - 1)];
+
+    // Update recentColors queue
+    recentColors.push(pickedColor);
+    if (recentColors.length > 3) recentColors.shift(); // Keep only the last three
+
+    return pickedColor;
+  };
+})();
 
 // Utility function to generate a sparkle object
 const generateSparkle = () => ({
