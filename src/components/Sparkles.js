@@ -37,7 +37,7 @@ const generateSparkle = () => ({
   size: random(10, 20),
   style: {
     top: `${random(-80, 70)}%`,
-    left: `${random(0, 100)}%`,
+    left: `${random(40, 120)}%`,
     zIndex: random(0, 1) === 0 ? -1 : 2, // Randomly decide z-index
   },
 });
