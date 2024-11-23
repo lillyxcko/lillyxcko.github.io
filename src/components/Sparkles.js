@@ -23,7 +23,9 @@ const colorList = [
     '#fae000',
     '#4070d3',
     '#493c9e',
-    '#93ecf8'
+    '#93ecf8',
+    '#ADD8E6',
+    '#90d5ff'
   ];
   
   // Utility function to pick a random color from the list
