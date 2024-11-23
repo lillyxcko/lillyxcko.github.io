@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import Sparkles from '../components/Sparkles.js'; 
 import spark from '../images/Spark.png';
 import politiq from '../images/PolitiQ2.png';
 import '../App.css';
@@ -53,7 +54,7 @@ function MainContent() {
         My goal in every project is to make meaningful contributions and grow alongside my 
         teammates so we can create something that will leave a lasting positive impact on our users.
       </p>
-      <h3>What makes me unique?</h3>
+      <h3>What makes me <Sparkles>unique</Sparkles>?</h3>
       <div className="smaller-text">
         With expertise in development and a deep appreciation for design, I am uniquely positioned to 
         support cross-team collaboration between designers and developers. 
@@ -61,7 +62,7 @@ function MainContent() {
         This holistic perspective not only makes designs and project outcomes more effective but also leads to more creative and practical solutions.
       </div>
       
-      <h4 id="portfolio">Recent Work</h4>
+      <h4 id="portfolio"></h4>
       <div className="recent-work"> 
         <div className="work">
           <a href="https://spark-roan.vercel.app/" target="_blank" rel="noopener noreferrer" className="work-item-link">
