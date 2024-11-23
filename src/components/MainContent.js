@@ -62,7 +62,7 @@ function MainContent() {
         This holistic perspective not only makes designs and project outcomes more effective but also leads to more creative and practical solutions.
       </div>
       
-      <h4 id="portfolio"></h4>
+      <h4 id="portfolio">Recent Work</h4>
       <div className="recent-work"> 
         <div className="work">
           <a href="https://spark-roan.vercel.app/" target="_blank" rel="noopener noreferrer" className="work-item-link">

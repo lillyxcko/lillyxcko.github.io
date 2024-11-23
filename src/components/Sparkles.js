@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { ReactSVG } from 'react-svg';
 import styled, { keyframes } from 'styled-components';
 import sparkle from '../images/sparkle.svg'; // Import your SVG
@@ -61,23 +61,23 @@ const usePrefersReducedMotion = () => {
 
 // Custom hook for random intervals
 const useRandomInterval = (callback, minDelay, maxDelay) => {
-  const timeoutId = React.useRef(null);
-
-  const runInterval = () => {
-    const timeout = random(minDelay, maxDelay);
-    timeoutId.current = setTimeout(() => {
-      callback();
-      runInterval();
-    }, timeout);
+    const timeoutId = useRef(null);
+  
+    const runInterval = useCallback(() => {
+      const timeout = random(minDelay, maxDelay);
+      timeoutId.current = setTimeout(() => {
+        callback();
+        runInterval();
+      }, timeout);
+    }, [callback, minDelay, maxDelay]); // Add dependencies here
+  
+    useEffect(() => {
+      if (minDelay === null || maxDelay === null) return;
+  
+      runInterval(); // Start the interval
+      return () => clearTimeout(timeoutId.current); // Cleanup
+    }, [minDelay, maxDelay, runInterval]); // Include runInterval as a dependency
   };
-
-  useEffect(() => {
-    if (minDelay === null || maxDelay === null) return;
-
-    runInterval();
-    return () => clearTimeout(timeoutId.current);
-  }, [minDelay, maxDelay, callback]);
-};
 
 // Sparkles component
 const Sparkles = ({ children, ...delegated }) => {

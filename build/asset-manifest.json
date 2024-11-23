@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.7efcc280.css",
-    "main.js": "/static/js/main.f4745c2b.js",
+    "main.css": "/static/css/main.8c2ca454.css",
+    "main.js": "/static/js/main.a544e5ed.js",
     "static/js/453.acca0757.chunk.js": "/static/js/453.acca0757.chunk.js",
     "static/media/Spark.png": "/static/media/Spark.4fac7a6b0af978619d4c.png",
     "static/media/PolitiQ2.png": "/static/media/PolitiQ2.744da65cab835553b896.png",
@@ -20,14 +20,15 @@
     "static/media/github.svg": "/static/media/github.06290ae82899ff0513283cae47dd18ad.svg",
     "static/media/dribble.svg": "/static/media/dribble.5b551ff9f98b1c6feba29651380b3d88.svg",
     "index.html": "/index.html",
+    "static/media/sparkle.svg": "/static/media/sparkle.cf862ebab0220302ea3521c891dd3b16.svg",
     "static/media/arrow-purple.svg": "/static/media/arrow-purple.666d5325c9d550cc7b4668afe449bdc6.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.f6a97f81f6a863ecd77ccc99c6f3fa17.svg",
-    "main.7efcc280.css.map": "/static/css/main.7efcc280.css.map",
-    "main.f4745c2b.js.map": "/static/js/main.f4745c2b.js.map",
+    "main.8c2ca454.css.map": "/static/css/main.8c2ca454.css.map",
+    "main.a544e5ed.js.map": "/static/js/main.a544e5ed.js.map",
     "453.acca0757.chunk.js.map": "/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7efcc280.css",
-    "static/js/main.f4745c2b.js"
+    "static/css/main.8c2ca454.css",
+    "static/js/main.a544e5ed.js"
   ]
 }
