@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import spark from '../images/Spark.png';
+import politiq from '../images/PolitiQ.png';
 import quotation from '../images/TK-Quotation.png';
 import '../App.css';
 import arrow from '../images/arrow-purple.svg';
@@ -77,15 +78,15 @@ function MainContent() {
         </div>
 
         <div className="work">
-          <a href="https://docs.google.com/presentation/d/1DJ9_u1qI9QAv5D6XZAG_8BpXz1Cy7kUt3XdhvYPt7iU/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="work-item-link">
+          <a href="https://www.figma.com/deck/1P5IXl0yG7xEZoX3WfRaJr/PolitiQ-Case-Study?node-id=2-559&node-type=slide&viewport=4%2C-2%2C0.41&t=ed96i4PjAmAdnTxQ-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" target="_blank" rel="noopener noreferrer" className="work-item-link">
             <div className="work-item">
-              <img src={quotation} alt="Work 2"/>
+              <img src={politiq} alt="Work 2"/>
             </div>
           </a>
           <div>
-            <h5>Quotation UI</h5>
-            <div className="work-description">High-fidelity Figma mock-up for an enterprise API, strategically enhancing data 
-              entry and manipulation for quoting complex and highly customizable print jobs. </div>
+            <h5>PolitiQ</h5>
+            <div className="work-description">A UX Approach to Fostering 
+            Political Knowledge and Participation.</div>
           </div>
         </div>
       </div>
