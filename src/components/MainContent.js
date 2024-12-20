@@ -91,8 +91,7 @@ function MainContent() {
             <h5>PolitiQ</h5>
             <div className="work-details">
               <span className="tech-tag">Case Study</span>
-              <div className="work-description">A UX Approach to Fostering 
-              Political Knowledge and Participation.</div>
+              <div className="work-description">A user-centered design project aimed at enhancing political awareness and participation among young adults.</div>
             </div>
           </div>
         </div>

@@ -647,7 +647,7 @@ body, html, #root, .App {
       font-size: 0.9rem;
     }
     .sidebar h1 {
-      font-size: 1.6rem; 
+      font-size: 2rem; 
       left: calc(9.375rem + 2.1rem); 
     }
     .sidebar-square {
@@ -775,7 +775,7 @@ body, html, #root, .App {
       font-size: 0.8rem;
     }
     .sidebar h1 {
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       left: 8.5rem; 
     }
     .sidebar-square {
