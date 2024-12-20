@@ -2,12 +2,12 @@ import React, { useEffect, useRef } from 'react';
 import Sparkles from '../components/Sparkles.js'; 
 import spark from '../images/Spark.png';
 import politiq from '../images/PolitiQ2.png';
+import tada from '../images/TADA.png';
 import '../App.css';
 import arrow from '../images/arrow-purple.svg';
 import csshtml from '../images/css-html.png'; 
 import figma from '../images/figma.png';
 import google from '../images/google.png';
-import java from '../images/java.png';
 import javascript from '../images/javascript.png';
 import microsoft from '../images/microsoft.png';
 import powerapps from '../images/powerapps.png';
@@ -72,32 +72,58 @@ function MainContent() {
           </a>
           <div>
             <h5>Spark</h5>
-            <div className="work-description">Social media web application made with React JS, Appwrite, Tailwind CSS, React Query. 
-              Styled with shadcn. Includes account authentication, create, edit and explore posts, view, like and save posts. </div>
+            <div className="work-details">
+              <span className="tech-tag">Live App</span>
+              <div className="work-description">
+                A social media platform that supports account authentication, post creation, editing, exploration, and engagement features like viewing, liking, and saving content.
+              </div>
+            </div>
           </div>
         </div>
 
         <div className="work">
-          <a href="https://www.figma.com/deck/1P5IXl0yG7xEZoX3WfRaJr/PolitiQ-Case-Study?node-id=2-559&node-type=slide&viewport=4%2C-2%2C0.41&t=ed96i4PjAmAdnTxQ-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" target="_blank" rel="noopener noreferrer" className="work-item-link">
+          <a href="https://www.figma.com/slides/1P5IXl0yG7xEZoX3WfRaJr/PolitiQ-Case-Study?node-id=2-536&t=f4n9rFQgnOW8AiK0-1" target="_blank" rel="noopener noreferrer" className="work-item-link">
             <div className="work-item">
               <img src={politiq} alt="Work 2"/>
             </div>
           </a>
           <div>
             <h5>PolitiQ</h5>
-            <div className="work-description">A UX Approach to Fostering 
-            Political Knowledge and Participation.</div>
+            <div className="work-details">
+              <span className="tech-tag">Case Study</span>
+              <div className="work-description">A UX Approach to Fostering 
+              Political Knowledge and Participation.</div>
+            </div>
           </div>
         </div>
+
+        <div className="work">
+          <a href="https://www.youtube.com/watch?v=O1qxJxxzHe8" target="_blank" rel="noopener noreferrer" className="work-item-link">
+            <div className="work-item">
+              <img src={tada} alt="Work 3"/>
+            </div>
+          </a>
+          <div>
+            <div className="work-details">
+            <h5>Gestures for Accessibility</h5>
+              <span className="tech-tag">Video Presentation</span>
+              <div className="work-description">Enabling accessible node-link diagram visualization for blind and low-vision users
+                 through a touch and audio-based web interface.</div>
+              </div>
+            </div>
+            
+        </div>
+
       </div>
 
+      
       <h4 id="blog">Articles</h4>
-        <div className="recent-work">
+        <div className="article-work">
           <div className="work">
             <a href="https://medium.com/design-bootcamp/how-designers-can-be-more-dev-conscious-77d9e20ea15e" target="_blank" rel="noreferrer" className="blog-box-link">
               <div className="blog-box">
-                <h2 className="blog-title">How designers can be more “Dev-Conscious”</h2>
-                <p className="blog-description">Discover how to elevate your UX designs and collaborate with developers for inspiring and achievable solutions.</p>
+                <h2 className="blog-title">How to be a “Dev-Conscious” designer</h2>
+                <p className="blog-description">An article on how to elevate your UX designs and collaborate with developers for inspiring and achievable solutions.</p>
                 <div className="blog-read-more">
                   Read more
                   <img src={arrow} alt="Arrow" className="arrow-icon"/>
@@ -115,8 +141,16 @@ function MainContent() {
         <img src={reactlogo} alt="React" title="React"/>
         <img src={typescript} alt="Typescript" title="TypeScript"/>
         <img src={python} alt="Python" title="Python"/>
-        <img src={java} alt="Java" title="Java"/>
         <img src={powerapps} alt="Microsoft PowerApps" title="Microsoft PowerApps"/>
+      </div>
+      <div className="tech-tags">
+        <span className="tech-tag">CSS & HTML</span>
+        <span className="tech-tag">JavaScript</span>
+        <span className="tech-tag">Figma</span>
+        <span className="tech-tag">React</span>
+        <span className="tech-tag">TypeScript</span>
+        <span className="tech-tag">Python</span>
+        <span className="tech-tag">Microsoft PowerApps</span>
       </div>
       <p style={{ marginBottom: 1, marginTop: 1, lineHeight: 1.5}}>I have the most expertise with these tools.</p>
       <div className="tech-description">Even when using something new, I learn fast and adapt quickly!</div>

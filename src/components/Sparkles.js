@@ -50,7 +50,7 @@ const generateSparkle = () => ({
   size: random(10, 20),
   style: {
     top: `${random(-80, 70)}%`,
-    left: `${random(20, 120)}%`,
+    left: `${random(10, 120)}%`,
     zIndex: random(0, 1) === 0 ? -1 : 2, // Randomly decide z-index
   },
 });
@@ -94,7 +94,7 @@ const useRandomInterval = (callback, minDelay, maxDelay) => {
 
 // Sparkles component
 const Sparkles = ({ children, ...delegated }) => {
-  const [sparkles, setSparkles] = useState(() => range(3).map(() => generateSparkle()));
+  const [sparkles, setSparkles] = useState(() => range(8).map(() => generateSparkle()));
   const prefersReducedMotion = usePrefersReducedMotion();
 
   useRandomInterval(
@@ -106,8 +106,8 @@ const Sparkles = ({ children, ...delegated }) => {
       nextSparkles.push(sparkle);
       setSparkles(nextSparkles);
     },
-    prefersReducedMotion ? null : 50,
-    prefersReducedMotion ? null : 450
+    prefersReducedMotion ? null : 35,
+    prefersReducedMotion ? null : 400
   );
 
   return (
