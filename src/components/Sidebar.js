@@ -20,7 +20,7 @@ function Sidebar({ emailRef, copied, copyToClipboard }) {
       </div>
       <h1>Lilly Ko</h1>
       <div className={`contact-tag ${copied ? 'copied' : ''}`} onClick={copyToClipboard}>
-        {copied ? 'Copied!' : 'lillyxcko@gmail.com'}
+        {copied ? 'Copied to clipboard' : 'lillyxcko@gmail.com'}
         <input type="text" className="contact-input" value="lillyxcko@gmail.com" ref={emailRef} readOnly />
       </div>
       <div className="nav-bar" style={{'--underline-color': '#ff7f50'}} onClick={() => handleClick('about')}>About</div>

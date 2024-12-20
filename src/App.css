@@ -92,7 +92,8 @@ body, html, #root, .App {
 }
 
 .contact-tag.copied {
-  background: rgba(0, 0, 0, 0.453);
+  background: #8a9bfb60;
+  font-weight: bold;
 }
 
 .contact-tag.copied::after {
