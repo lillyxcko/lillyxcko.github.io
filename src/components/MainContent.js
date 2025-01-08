@@ -3,6 +3,7 @@ import Sparkles from '../components/Sparkles.js';
 import spark from '../images/Spark.png';
 import politiq from '../images/PolitiQ2.png';
 import tada from '../images/TADA.png';
+import quotation from '../images/TK-Quotation.png';
 import '../App.css';
 import arrow from '../images/arrow-purple.svg';
 import csshtml from '../images/css-html.png'; 
@@ -108,6 +109,21 @@ function MainContent() {
               <span className="tech-tag">Video Presentation</span>
               <div className="work-description">Enabling accessible node-link diagram visualization for blind and low-vision users
                  through a touch and audio-based web interface.</div>
+              </div>
+            </div>
+        </div>
+
+        <div className="work">
+          <a href="https://www.figma.com/slides/yiY7FV0mnpDJUL8cFeMTzz/Quotation-Case-Study?node-id=1-1814&t=xqSORzo4YKheCTGJ-1" target="_blank" rel="noopener noreferrer" className="work-item-link">
+            <div className="work-item">
+              <img src={quotation} alt="Work 4"/>
+            </div>
+          </a>
+          <div>
+            <div className="work-details">
+            <h5>Quotation Service Design</h5>
+              <span className="tech-tag">Case Study</span>
+              <div className="work-description">A service design study focused on optimizing the creation and management of quotes within a digital printing company.</div>
               </div>
             </div>
             
