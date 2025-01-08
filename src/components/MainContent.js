@@ -3,7 +3,7 @@ import Sparkles from '../components/Sparkles.js';
 import spark from '../images/Spark.png';
 import politiq from '../images/PolitiQ2.png';
 import tada from '../images/TADA.png';
-import quotation from '../images/TK-Quotation.png';
+import quotation from '../images/Quotation.png';
 import '../App.css';
 import arrow from '../images/arrow-purple.svg';
 import csshtml from '../images/css-html.png'; 
