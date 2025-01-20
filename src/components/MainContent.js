@@ -91,7 +91,7 @@ function MainContent() {
           <div>
             <h5>PolitiQ</h5>
             <div className="work-details">
-              <span className="tech-tag">Case Study</span>
+              <span className="tech-tag">UX Case Study</span>
               <div className="work-description">A user-centered design project aimed at enhancing political awareness and participation among young adults.</div>
             </div>
           </div>
@@ -122,7 +122,7 @@ function MainContent() {
           <div>
             <div className="work-details">
             <h5>Quotation Service Design</h5>
-              <span className="tech-tag">Case Study</span>
+              <span className="tech-tag">UX Case Study</span>
               <div className="work-description">A service design study focused on optimizing the creation and management of quotes within a digital printing company.</div>
               </div>
             </div>
